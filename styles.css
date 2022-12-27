@@ -8,25 +8,26 @@
   --text-color: #fff;
   --bg-url: url(./assets/bg-dark-desktop.jpeg);
   --stroke-color: rgba(255, 255, 255, 0.5);
-  --surface-color: rgba(93, 90, 150, 0.4);
-  --surface-color-hover: rgba(184, 182, 224, 0.8);
+  --surface-color: rgba(150, 150, 150, 0.4);
+  --surface-color-hover: rgba(150, 150, 150, 0.8);
+  --surface-text-hover: #666;
   --highlight-color: rgba(255, 255, 255, 0.2);
   --switch-bg-url: url(./assets/moon-icon.svg);
 }
 
 .light {
-  --text-color: #000;
+  --text-color: #fff;
   --bg-url: url(./assets/bg-light-desktop.jpeg);
-  --stroke-color: rgba(79, 79, 79, 0.473);
-  --surface-color: rgba(93, 90, 150, 0.4);
-  --surface-color-hover: rgba(184, 182, 224, 0.8);
-  --highlight-color: rgba(0, 0, 0, 0.1);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(212, 211, 232, 0.2);
+  --surface-color-hover: rgba(88, 88, 88, 0.9);
+  --surface-text-hover: #666;
+  --highlight-color: rgba(129, 129, 129, 0.6);
   --switch-bg-url: url(./assets/sun-icon.svg);
 }
 
 body {
-  background: var(--bg-url) no-repeat top center/cover;
-  height: 100vh;
+  background: linear-gradient( to right bottom, rgba(0, 0, 0, 0.8), rgb(0 ,0 ,0, 0.2) ), var(--bg-url) no-repeat top center/cover;
 }
 
 body * {
@@ -124,6 +125,7 @@ ul li a {
 ul li a:hover {
   background: var(--surface-color-hover);
   border: 1px solid var(--text-color);
+  /* color: var(--surface-text-hover) */
 }
 
 .social-links ul {
@@ -152,6 +154,18 @@ footer {
   padding: 24px 0;
   font-size: 12px;
   font-weight: 400;
+}
+
+footer p {
+  margin-bottom: 20px;
+}
+
+.designed-by {
+  font-size: 10px;
+}
+
+.designed-by a:hover {
+  color: var(--surface-text-hover);
 }
 
 /* animations */
