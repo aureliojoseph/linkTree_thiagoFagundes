@@ -1,4 +1,4 @@
-# LinkTree Project
+# LinkTree | Software Engineer Thiago Fagundes
 
 # About
 This project is a link tree landing page for Software Engineer Thiago Fagundes. The page contains quick links to the client's profile pages, such as LinkedIn, personal portfolio page, etc.
